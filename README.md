@@ -1,2 +1,2 @@
 # ironiot.github.io
-Contains the frontend code for Iron IoT's official website
+Contains the frontend code of Iron IoT's official website

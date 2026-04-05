@@ -1,109 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iron IoT – Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
- 		"@type": "Organization",
- 		"name": "Iron IoT",
-		"url": "https://ironiot.ca",
- 		"logo": "https://github.com/ironiot/ironiot.github.io/blob/main/logo.png"
-	}
-</script>
-  </head>
-  <body>
-    <!-- Header with logo and navigation -->
-    <header>
-      <div class="container header-container">
-        <a href="index.html" class="brand">
-          <img
-            src="logo.png"
-            alt="Iron IoT logo"
-            class="logo"
-          />
-        </a>
-        <nav id="site-nav">
-          <button id="nav-toggle" aria-label="Toggle navigation">
-            ☰
-          </button>
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Iron IoT is a British Columbia non-profit focused on IoT security through an IoT search engine, IoT honeypot, and IoT vulnerability scanner.">
+  <meta name="theme-color" content="#1f6fb2">
+  <title>Iron IoT | Securing the Connected World</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Iron IoT home">
+        <img src="assets/logo.png" alt="Iron IoT logo">
+        <div class="brand-text">
+          <span class="brand-name">Iron IoT</span>
+          <span class="brand-tag">B.C. non-profit for IoT security</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#impact">Impact</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Get Involved</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Security for connected infrastructure</p>
+          <h1>Helping communities understand, monitor, and strengthen IoT security.</h1>
+          <p class="hero-text">
+            Iron IoT is a British Columbia non-profit organization focused on practical IoT defense.
+            We build tools and research-driven services that help identify exposed devices, study threat activity,
+            and surface weaknesses before they are exploited.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services">Explore our work</a>
+            <a class="button button-secondary" href="#contact">Partner with us</a>
+          </div>
+          <ul class="hero-points" aria-label="Highlights">
+            <li>Research-led security initiatives</li>
+            <li>Defensive visibility for connected systems</li>
+            <li>Community-minded non-profit mission</li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
 
-    <!-- Hero section -->
-    <section class="hero">
-      <div class="container hero-content">
-        <h1>Welcome to Iron&nbsp;IoT</h1>
-        <p>
-          Your trusted partner for secure, modern Internet‑of‑Things solutions.
-        </p>
-        <a href="services.html" class="btn">Explore our services</a>
-      </div>
-    </section>
-
-    <!-- Features/Services overview -->
-    <section class="features">
-      <div class="container">
-        <h2>What we offer</h2>
-        <div class="feature-grid">
-          <div class="feature-item">
-            <h3>Secure Connectivity</h3>
-            <p>
-              Protect your network with end‑to‑end encryption and cutting‑edge
-              authentication protocols that keep your data safe.
-            </p>
+        <div class="hero-panel reveal delay-1" aria-hidden="true">
+          <div class="hero-card hero-card-main">
+            <div class="chip chip-blue">Core capabilities</div>
+            <h2>IoT search engine</h2>
+            <p>Structured visibility into internet-connected devices and services.</p>
           </div>
-          <div class="feature-item">
-            <h3>Device Management</h3>
-            <p>
-              Easily monitor, update and administer your devices from a single
-              dashboard designed for scalability.
-            </p>
+          <div class="hero-card hero-card-offset">
+            <h2>IoT honeypot</h2>
+            <p>Controlled deception environments for threat observation and analysis.</p>
           </div>
-          <div class="feature-item">
-            <h3>Analytics &amp; Insights</h3>
-            <p>
-              Gain real‑time visibility into performance and usage patterns to
-              drive smarter business decisions.
-            </p>
+          <div class="hero-card">
+            <h2>IoT vulnerability scanner</h2>
+            <p>Focused assessments to identify exposure and improve resilience.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Call to action section -->
-    <section class="cta">
-      <div class="container">
-        <h2>Ready to transform your business?</h2>
-        <p>
-          Discover how Iron&nbsp;IoT can help you build secure and
-          intelligent products.
-        </p>
-        <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+    <section class="section section-muted" id="about">
+      <div class="container section-grid two-col">
+        <div class="reveal">
+          <p class="eyebrow">About Iron IoT</p>
+          <h2>Built around visibility, research, and protection.</h2>
+          <p>
+            The growth of connected devices has expanded both opportunity and risk. Iron IoT exists to support a safer
+            ecosystem by making IoT exposure easier to understand and by developing defensive tools that inform better decisions.
+          </p>
+          <p>
+            Our work is designed to support awareness, responsible research, and proactive security improvement across connected environments.
+          </p>
+        </div>
+
+        <div class="stat-grid reveal delay-1">
+          <article class="stat-card">
+            <span class="stat-label">Focus area</span>
+            <strong>IoT security</strong>
+            <p>Defensive tooling and visibility for connected infrastructure.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Organization type</span>
+            <strong>Non-profit</strong>
+            <p>Mission-driven initiatives intended to create public security value.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Location</span>
+            <strong>British Columbia</strong>
+            <p>Rooted in B.C. and positioned to support broader collaboration.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Approach</span>
+            <strong>Practical and ethical</strong>
+            <p>Focused on research, monitoring, and responsible vulnerability discovery.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-container">
-        <p>© 2026 Iron&nbsp;IoT. All rights reserved.</p>
-        <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
-      </div>
-    </footer>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What we provide</p>
+          <h2>Three core services for IoT security operations and research.</h2>
+          <p>
+            Iron IoT concentrates on three complementary capabilities that improve visibility into connected environments,
+            study adversarial behavior, and support early detection of weaknesses.
+          </p>
+        </div>
 
-    <script src="js/script.js"></script>
-  </body>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">01</div>
+            <h3>IoT Search Engine</h3>
+            <p>
+              A platform for discovering and organizing information about internet-reachable IoT systems, services,
+              and device exposure patterns. This enables research, asset visibility, and informed security analysis.
+            </p>
+            <ul>
+              <li>Surface exposed device metadata</li>
+              <li>Support asset visibility initiatives</li>
+              <li>Improve situational awareness</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal delay-1">
+            <div class="service-icon">02</div>
+            <h3>IoT Honeypot</h3>
+            <p>
+              Controlled decoy systems built to attract and observe malicious interaction. This helps researchers understand
+              attacker behavior, common probing patterns, and emerging threats against connected devices.
+            </p>
+            <ul>
+              <li>Observe threat activity safely</li>
+              <li>Capture behavioral indicators</li>
+              <li>Generate intelligence for defense</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal delay-2">
+            <div class="service-icon">03</div>
+            <h3>IoT Vulnerability Scanner</h3>
+            <p>
+              A security assessment capability for identifying weaknesses in IoT systems so they can be addressed before they
+              become incidents. The emphasis is on responsible discovery and actionable remediation insights.
+            </p>
+            <ul>
+              <li>Reveal common misconfigurations</li>
+              <li>Highlight exposed services</li>
+              <li>Support remediation planning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="impact">
+      <div class="container section-grid two-col">
+        <div class="reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2>IoT risk is growing across homes, institutions, and critical environments.</h2>
+          <p>
+            As connected devices become more common, visibility gaps and weak configurations create opportunities for abuse.
+            Better discovery, monitoring, and testing help organizations reduce uncertainty and act sooner.
+          </p>
+        </div>
+
+        <div class="impact-list reveal delay-1">
+          <article>
+            <h3>Visibility</h3>
+            <p>Understand what is exposed and where the risk surface is expanding.</p>
+          </article>
+          <article>
+            <h3>Threat intelligence</h3>
+            <p>Learn how malicious actors probe and interact with connected systems.</p>
+          </article>
+          <article>
+            <h3>Resilience</h3>
+            <p>Turn findings into more secure configurations, processes, and defensive posture.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How we work</p>
+          <h2>A clear, responsible workflow for security improvement.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-step">1</span>
+            <div>
+              <h3>Discover</h3>
+              <p>Map device exposure and identify relevant infrastructure, services, and observable security signals.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <span class="timeline-step">2</span>
+            <div>
+              <h3>Study</h3>
+              <p>Use honeypot telemetry and platform insights to understand attacker behavior and risk trends.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal delay-2">
+            <span class="timeline-step">3</span>
+            <div>
+              <h3>Strengthen</h3>
+              <p>Translate findings into practical vulnerability reduction and better defensive decisions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="contact">
+      <div class="container cta-panel reveal">
+        <div>
+          <p class="eyebrow">Get involved</p>
+          <h2>Support the mission or start a conversation.</h2>
+          <p>
+            Iron IoT can collaborate with researchers, institutions, and organizations that care about improving security in connected environments.
+          </p>
+        </div>
+
+        <div class="cta-actions">
+          <a class="button button-primary" href="mailto:your-email@example.com?subject=Iron%20IoT%20Inquiry">Email Iron IoT</a>
+          <a class="button button-secondary" href="#top">Back to top</a>
+          <p class="cta-note">Update the email link in <code>index.html</code> with your preferred contact address before publishing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Iron IoT</strong>
+        <p>Defending the connected world through visibility, research, and responsible IoT security.</p>
+      </div>
+      <p>© <span id="year"></span> Iron IoT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
